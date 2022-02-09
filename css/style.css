@@ -1,0 +1,172 @@
+/*==================== Common Section Style ====================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  /* scroll-padding-top: 9rem; */
+  scroll-behavior: smooth;
+}
+
+
+.button{
+    text-decoration:none;
+    color:#ffff;
+    font-size:1.8rem;
+    cursor: pointer;
+    text-transform:uppercase;
+    border-radius: 0.5rem;
+    background-color: #EC5863;
+    padding: 1rem 2rem;
+    transition:all 0.5s;
+}
+
+.button:hover{
+    background-color:#444444;
+    color:#EC5863;
+}
+
+
+
+/*==================== Header Section Style====================*/
+header{
+    position:relative;
+}
+
+
+header .navBar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0rem 5rem;
+}
+
+header .navBar .navLogo img{
+    width: 25rem;
+}
+
+
+header .navBar .navLink ul{
+    display:flex;
+    justify-content: space-between;
+}
+
+header .navBar .navLink ul li{
+    list-style:none;
+    padding: 0 0.5rem;
+    display: inline-block;
+    position:relative;
+}
+
+header .navBar .navLink ul li a {
+    text-decoration:none;
+    color:#EC5863;
+    font-size:1.8rem;
+    cursor: pointer;
+    text-transform:uppercase;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    transition:all 0.5s;
+    border: solid 0.2rem transparent;
+}
+
+header .navBar .navLink ul li a:hover{
+    color:#444444;
+    border: solid 0.2rem #EC5863;
+}
+
+header .navBar .downloadButton a {
+    text-decoration:none;
+    color:#ffff;
+    font-size:1.8rem;
+    cursor: pointer;
+    text-transform:uppercase;
+    border-radius: 0.5rem;
+    background-color: #4285F4;
+    padding: 1rem 2rem;
+    transition:all 0.5s;
+}
+
+header .navBar .downloadButton a:hover{
+    background-color:#ffff;
+    color:#EC5863;
+}
+
+header .headerContent {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 100vh;
+    padding:0 5rem;
+}
+
+header .headerContent .headerTitle h1{
+    font-size: 8rem;
+    color:#292929;
+}
+header .headerContent .headerTitle h1 span{
+    color:#EC5863;
+}
+
+header .headerContent .headerTitle p{
+    font-size: 2.1rem;
+    width:70%;
+    margin:1.2rem 0rem 3rem;
+    color:#444444;
+}
+
+header .sideDesign{
+    position: absolute;
+    width:36rem;
+    height:100vh;
+    left:80%;
+    top: 0;
+    background: #EC5863;
+    border-radius: 5rem 0rem 0rem 5rem;
+    z-index: -1;
+}
+
+
+/*==================== Features Section Style====================*/
+.featuresContainer{
+    padding: 0rem 15rem;
+}
+
+.featuresContainer .title {
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin:13rem 0rem 6rem;
+    color:#444444;
+}
+
+.featuresContainer .title span{
+    color:#EC5863;
+}
+
+.featuresContainer .row {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.featuresContainer .row .col{
+    flex: 1 1 20rem;
+}
+.featuresContainer .row .col h3{
+    font-size: 7rem;
+    color:#292929;
+}
+.featuresContainer .row .col h3 span{
+    color:#EC5863
+}
+.featuresContainer .row .col p{
+    font-size: 2.5rem;
+    padding: 1.2rem 0rem 2.5rem;
+    color:#444444;
+}
