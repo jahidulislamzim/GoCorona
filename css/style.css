@@ -27,7 +27,6 @@ html {
 
 .button:hover{
     background-color:#444444;
-    color:#EC5863;
 }
 
 
@@ -92,43 +91,46 @@ header .navBar .downloadButton a {
 }
 
 header .navBar .downloadButton a:hover{
-    background-color:#ffff;
-    color:#EC5863;
+    background-color:#EC5863;
 }
 
-header .headerContent {
+header .sliderContent {
     display:flex;
     justify-content:space-between;
     align-items: center;
-    height: 100vh;
+    height: 85vh;
     padding:0 5rem;
 }
 
-header .headerContent .headerTitle h1{
+header .sliderContent .sliderTitle h1{
     font-size: 8rem;
     color:#292929;
 }
-header .headerContent .headerTitle h1 span{
+header .sliderContent .sliderTitle h1 span{
     color:#EC5863;
 }
 
-header .headerContent .headerTitle p{
+header .sliderContent .sliderTitle p{
     font-size: 2.1rem;
     width:70%;
     margin:1.2rem 0rem 3rem;
     color:#444444;
 }
 
-header .sideDesign{
-    position: absolute;
-    width:36rem;
-    height:100vh;
-    left:80%;
-    top: 0;
-    background: #EC5863;
-    border-radius: 5rem 0rem 0rem 5rem;
-    z-index: -1;
+.pageClass{
+    background: #4285F4 !important;
+    margin:0rem 1.5rem !important;
+    padding: 0.6rem !important;;
 }
+
+.currentPage .is-active{
+    background: #EC5863 !important;
+    transform: scale(1.5) !important;
+}
+
+
+
+
 
 
 /*==================== Features Section Style====================*/
@@ -167,6 +169,120 @@ header .sideDesign{
 }
 .featuresContainer .row .col p{
     font-size: 2.5rem;
+    padding: 1.2rem 0rem 2.5rem;
+    color:#444444;
+}
+
+
+
+/*==================== OurNetwork Section Style====================*/
+.ourNetwork {
+    height: 50vh;
+}
+.ourNetwork .networkContainer{
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url(../images/OurNetwerkBG.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:75%;
+
+}
+
+.ourNetwork .title{
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin:13rem 0rem 6rem;
+    color:#444444;
+}
+
+.ourNetwork .title span{
+    color:#EC5863;                                               
+}
+
+.ourNetwork .networkContainer .networkContent{
+    height:15rem;
+    width:60%;
+    background-color: #ffffff;
+    box-shadow: 1px 3px 8px #70727491;
+    border-radius: 4rem;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+}
+
+
+.ourNetwork .networkContainer .networkContent .contentBox{
+    padding:0rem 5rem;
+    cursor: pointer;
+}
+
+.ourNetwork .networkContent .contentBox h1{
+    font-size: 6rem;
+    color: #EC5863;
+    transition:all 0.5s;
+}
+
+.ourNetwork .networkContent .contentBox h4 {
+    color:#444444;
+    font-size: 1.8rem;
+    transition:all 0.5s;
+}
+.ourNetwork .networkContent .contentBox:hover h1{
+    color:#444444;
+    transform:scale(1.2) translateY(-1rem);
+}
+
+.ourNetwork .networkContent .contentBox:hover h4{
+    color:#EC5863;
+}
+
+
+
+/*==================== Expart Section Style====================*/
+
+.expertsContainer{
+    padding: 0rem 15rem;
+    height:70vh;
+}
+
+.expertsContainer .title{
+    font-size: 6rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin:20rem 0rem 6rem;
+    color:#444444;
+}
+
+.expertsContainer .title span{
+    color:#EC5863;
+}
+
+.expertsContainer .row {
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.expertsContainer .row .col{
+    flex: 1 1 20rem;
+}
+.expertsContainer .row .col h1{
+    font-size: 5rem;
+    color:#292929;
+}
+.expertsContainer .row .col h1 span{
+    color:#EC5863
+}
+.expertsContainer .row .col p{
+    font-size: 2.2rem;
     padding: 1.2rem 0rem 2.5rem;
     color:#444444;
 }
