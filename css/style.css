@@ -208,7 +208,7 @@ header .sliderContent .sliderTitle p{
     width:60%;
     background-color: #ffffff;
     box-shadow: 1px 3px 8px #70727491;
-    border-radius: 4rem;
+    border-radius: 2rem;
     display:flex;
     justify-content:space-between;
     align-items: center;
@@ -284,5 +284,84 @@ header .sliderContent .sliderTitle p{
 .expertsContainer .row .col p{
     font-size: 2.2rem;
     padding: 1.2rem 0rem 2.5rem;
+    color:#444444;
+}
+
+
+
+/*==================== HealthCare Section Style====================*/
+.healthcareContainer{
+    height:100vh;
+    margin-top: 15rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background-image: url(../images/healthcareBG.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:90%;
+}
+.healthcareContainer .healthCareText{
+    text-align: center;
+    color:#444444;
+    width:60%;
+
+}
+
+.healthcareContainer .healthCareText h1{
+    font-size: 4.5rem;
+    text-transform: uppercase;
+}
+
+.healthcareContainer .healthCareText h1 span{
+    color:#EC5863;
+}
+
+.healthcareContainer .healthCareText p{
+    font-size: 2.2rem;
+    color:#444444;
+}
+
+.healthcareContainer .healthCareBox{
+    height: 60%;
+    width: 80%;
+    margin: 8rem 0rem 0rem; 
+}
+
+.healthcareContainer .healthCareBox .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.healthcareContainer .healthCareBox .row .col{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+    text-align: center;
+    background-color:#ffff;
+    box-shadow: 3px 3px 10px #44444449;
+    height:30rem;
+    width:28.6rem;
+    padding:0rem 3rem;
+    border-radius:0.8rem;
+}
+
+.healthcareContainer .healthCareBox .row .col .colImage img{
+     height:8rem;
+     margin-bottom:1rem;
+}
+
+.healthcareContainer .healthCareBox .row .col .colText h3{
+    font-size:2.3rem;
+    margin:2rem 0rem;
+    color:#444444;
+
+}
+.healthcareContainer .healthCareBox .row .col .colText p{
+    font-size:1.5rem;
+    margin-bottom:3rem;
     color:#444444;
 }
