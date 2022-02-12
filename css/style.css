@@ -1,15 +1,41 @@
+/*==================== Fonts ====================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /*==================== Common Section Style ====================*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 html {
     font-size: 62.5%;
     overflow-x: hidden;
-    /* scroll-padding-top: 9rem; */
+    scroll-padding-top: 9rem;
     scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar
+{
+    width:1.4rem;
+}
+
+html::-webkit-scrollbar-track
+{
+    background:#ecf0f3;
+}
+
+html::-webkit-scrollbar-thumb
+{
+    background:#ec5862cb;
+    border-radius: 3rem;
+}
+html::-webkit-scrollbar-thumb:hover
+{
+    background:#ec5862;
+    transition:all 0.5s;
 }
 
 .button {
@@ -31,13 +57,18 @@ html {
 /*==================== Header Section Style====================*/
 header {
     position: relative;
+    width: 100%;
 }
 
 header .navBar {
+    width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0rem 5rem;
+    padding:0rem 5rem;
+    position:fixed;
+    z-index: 99999;
+    background-color: #ffff;
 }
 
 header .navBar .navLogo img {
@@ -51,7 +82,7 @@ header .navBar .navLink ul {
 
 header .navBar .navLink ul li {
     list-style: none;
-    padding: 0 0.5rem;
+    padding: 0 0.2rem;
     display: inline-block;
     position: relative;
 }
@@ -63,7 +94,7 @@ header .navBar .navLink ul li a {
     cursor: pointer;
     text-transform: uppercase;
     border-radius: 0.5rem;
-    padding: 1rem 2rem;
+    padding: 0.4rem 1.3rem;
     transition: all 0.5s;
     border: solid 0.2rem transparent;
 }
@@ -94,7 +125,8 @@ header .sliderContent {
     justify-content: space-between;
     align-items: center;
     height: 85vh;
-    padding: 0 5rem;
+    padding: 0rem 10rem;
+    margin-top: 5rem;
 }
 
 header .sliderContent .sliderTitle h1 {
@@ -122,6 +154,22 @@ header .sliderContent .sliderTitle p {
 .currentPage .is-active {
     background: #ec5863 !important;
     transform: scale(1.5) !important;
+}
+
+.cumtomArrowsClass{
+    background-color: transparent !important;
+    width: 4rem !important;
+    height: 4rem !important;
+}
+
+.cumtomArrowsClass svg{
+    fill:#1da1f2 !important;
+    width:100% !important;
+    height:100% !important;
+    transition: all 0.5s;
+}
+.cumtomArrowsClass svg:hover{
+    fill: #e1306c !important;
 }
 
 /*==================== Features Section Style====================*/
@@ -267,7 +315,7 @@ header .sliderContent .sliderTitle p {
 }
 
 .expertsContainer .row .col h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     color: #292929;
 }
 
@@ -347,7 +395,7 @@ header .sliderContent .sliderTitle p {
 }
 
 .healthcareContainer .healthCareBox .row .col .colText h3 {
-    font-size: 2.3rem;
+    font-size: 2rem;
     margin: 2rem 0rem;
     color: #444444;
 }
@@ -487,7 +535,8 @@ header .sliderContent .sliderTitle p {
 
 .footerContainer .footerRow .footerLinkBox h1 {
     font-size: 2.5rem;
-    color: #ecf0f3;
+    color: #ec5863;
+    margin-bottom:1.5rem;
 }
 
 .footerContainer .footerRow .footerLinkBox .footerLink {
@@ -498,7 +547,7 @@ header .sliderContent .sliderTitle p {
 .footerContainer .footerRow .footerLinkBox .footerLink a {
     margin: 0.5rem 2.5rem;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-decoration: none;
     font-weight: 600;
     color: #ecf0f3;
@@ -507,6 +556,7 @@ header .sliderContent .sliderTitle p {
 
 .footerContainer .footerRow .footerLinkBox .footerLink a:hover {
     transform: scale(1.1);
+    letter-spacing: 0.3rem;
 }
 
 .footerContainer .footerRow .footerIconBox .footerIcon a i {
